@@ -20,6 +20,9 @@ et-micc-build = "^1.1.8"
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.4.2"
+black = "^21.4b2"
+isort = "^5.8.0"
+pylint = "^2.8.2"
 
 [tool.poetry.scripts]
 
