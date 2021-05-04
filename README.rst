@@ -2,9 +2,7 @@
 ctef2py
 =======
 
-
-
-<Enter a one-sentence description of this project here.>
+Collider Time Evolution F2PY implementation.
 
 
 * Free software: MIT license
@@ -14,4 +12,8 @@ ctef2py
 Features
 --------
 
-* TODO
+* Add Fortran code 
+* Add examples
+* Add docs
+  
+
