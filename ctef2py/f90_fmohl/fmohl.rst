@@ -6,11 +6,14 @@ Module ctef2py.fmohl
 
 Module :py:mod:`fmohl` built from fortran code in :file:`f90_fmohl/fmohl.f90`.
 
-.. function:: add(x,y,z)
+.. function:: fmohl(a,b,q,np)
    :module: ctef2py.fmohl
 
-   Compute the sum of *x* and *y* and store the result in *z* (overwrite).
+   Compute the function fmohl as described in the paper on fast IBS calculations by `Nagaitsev <https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.8.064403>`_.
 
-   :param x: 1D Numpy array with ``dtype=numpy.float64`` (input)
-   :param y: 1D Numpy array with ``dtype=numpy.float64`` (input)
-   :param z: 1D Numpy array with ``dtype=numpy.float64`` (output)
+   :param a: float  ``dtype=numpy.float64`` (input)
+   :param b: float ``dtype=numpy.float64`` (input)
+   :param q: float  ``dtype=numpy.float64`` (input)
+   :param np: int ``dtype=numpy.float64`` (input)
+
+   :returns: float
