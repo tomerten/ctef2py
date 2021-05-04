@@ -1,0 +1,38 @@
+{
+  "fmohl": {
+    "options": {
+      "verbosity": 1,
+      "project_path": "/home/mti/github-tomerten/ctef2py",
+      "default_project_path": true,
+      "clear_log": false,
+      "template_parameters": {
+        "project_name": "ctef2py",
+        "package_name": "ctef2py",
+        "full_name": "Tom Mertens",
+        "email": "your.email@whatev.er",
+        "github_username": "tomerten",
+        "version": "0.0.0",
+        "github_repo": "{{ cookiecutter.project_name }}",
+        "default_branch": "master",
+        "python_version": "3.7",
+        "sphinx_html_theme": "sphinx_rtd_theme",
+        "open_source_license": "MIT license",
+        "py": "py",
+        "project_short_description": "<Enter a one-sentence description of this project here.>",
+        "module_name": "fmohl"
+      },
+      "add_name": "fmohl",
+      "app": false,
+      "group": false,
+      "py": false,
+      "package": false,
+      "f90": true,
+      "cpp": false,
+      "templates": "module-f90",
+      "overwrite": false,
+      "backup": false
+    },
+    "API.rst": "\n.. include:: ../ctef2py/f90_fmohl/fmohl.rst\n",
+    "ctef2py/__init__.py": "\ntry:\n    import ctef2py.fmohl\nexcept ModuleNotFoundError as e:\n    # Try to build this binary extension:\n    from pathlib import Path\n    import click\n    from et_micc_build.cli_micc_build import auto_build_binary_extension\n    msg = auto_build_binary_extension(Path(__file__).parent, 'fmohl')\n    if not msg:\n        import ctef2py.fmohl\n    else:\n        click.secho(msg, fg='bright_red')"
+  }
+}

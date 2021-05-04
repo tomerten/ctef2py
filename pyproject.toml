@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ctef2py"
-version = "0.0.0"
+version = "0.1.0"
 description = "<Enter a one-sentence description of this project here.>"
 authors = ["Tom Mertens <your.email@whatev.er>"]
 license = "MIT"
@@ -13,7 +13,10 @@ homepage = "https://github.com/tomerten/ctef2py"
 keywords = ['packaging', 'poetry']
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.8"
+numpy = "^1.20.2"
+pandas = "^1.2.4"
+et-micc-build = "^1.1.8"
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.4.2"
